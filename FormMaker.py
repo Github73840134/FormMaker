@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 import time
 global formname
 formname = ''
-form = [[]]
+form = []
 def create(name):
 	form.clear()
 	global formname
