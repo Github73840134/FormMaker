@@ -15,5 +15,6 @@ Example:
  import FormMaker as fm
  form.create("Short answer")
  fm = form.add()
- fm.shortans("hi
+ fm.shortans("hi")
+ 
 ```
