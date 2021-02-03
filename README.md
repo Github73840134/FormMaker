@@ -32,6 +32,10 @@ Terminal:
 multichoice is a multiple choice answer object- adds a multiple choice answer object to the form  
 prompt is to be str or int, when making use the appropriate command to convert str->int or int->str  
 options is to be list, when making use the appropriate command to convert str->int or int->str when adding to the options list  
+options format should look like this  
+```python
+(("Python Files","*.py"))
+```
 Example:
 ```python
  import FormMaker as fm
@@ -59,7 +63,7 @@ Example:
  form.display()
 ```
 Output
-![What is this](iamge/select_ata.png)  
+![What is this](image/select_ata.png)  
 Terminal:  
 ```python
 {'This is a test': True, 'This is a test0': True, 'This is a test1': False}
@@ -76,8 +80,8 @@ Example:
  form.display()
 ```
 Output
-![What is this](iamge/uploadfile1.png)  
-![What is this](iamge/uploadfile2.png)   
+![UploadFile_Rt1](image/uploadfile1.png)  
+![UploadFile_RT2](image/uploadfile2.png)   
 Terminal:  
 ```python
 {'Browse': '/home/runner/FormMaker/main.py'}
@@ -94,9 +98,16 @@ Example:
  form.display()
 ```
 Output:  
-![What is this](iamge/uploadfile_rt1.png)  
-![What is this](iamge/uploadfile_rt2.png)   
+![What is this](image/uploadfile_rt1.png)  
+![What is this](image/uploadfile_rt2.png)   
 Terminal:  
 ```python
 {'Browse': '/home/runner/FormMaker/main.py'}
 ```
+# The End
+Well you made it to the end of the documentation.
+
+# Plans for the future
+- Add Image Support  
+- Add multi-file uploading
+- Add Video Playback
