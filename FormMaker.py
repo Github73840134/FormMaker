@@ -2,6 +2,7 @@ import PySimpleGUI as sg
 import time
 global formname
 formname = ''
+global icon
 form = []
 def create(name):
 	form.clear()
@@ -69,7 +70,8 @@ class add:
 		"""
 		form.append([sg.Button("Submit")])
 		global formname
-		window = sg.Window(formname, form,grab_anywhere=True,resizable=True,enable_close_attempted_event=True,use_default_focus=False)
+		global icon
+		window = sg.Window(formname, form,grab_anywhere=True,resizable=True,enable_close_attempted_event=True,use_default_focus=False,titlebar_icon=icon,use_custom_titlebar=True)
 		while True:
 			event ,values = window.read(timeout=500)
 			if event == "Submit":

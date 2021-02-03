@@ -1,12 +1,15 @@
 # FormMaker
 A form maker built with PySimpleGUI
 Version 1.0
+# READ THIS BEFORE CONTINUING
+This only works with Python 3+, This is due to PySimpleGUI requiring it.
 # A quick note
 If you want to see a demo of the program you can call FormMaker.demo() to see a demo form with all elements  
 Also the way the code is structred when you have more than one multichoice or select all that apply, Duplicate layout messages may appear in the terminal, This is normal. When you recive your response from the form it sometimes looks like this:
 ```python
 'This is a testx': False
 ```
+Also you can copy and paste form the examples folder to get started
 # Commands
 ### create()
 Clears any existing forms and creates a new one or just creates a new form
@@ -111,6 +114,6 @@ Well you made it to the end of the documentation.
 # Plans for the future
 - Add Image Support  
 - Add multi-file uploading
-- Add Video Playback
+- Save form templates
 # Thanks!
 ©2020 Seth Edwards
