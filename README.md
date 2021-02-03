@@ -62,7 +62,7 @@ Example:
  fm.select_ata("Select all that apply",['1','2','3'])
  form.display()
 ```
-Output
+Output  
 ![What is this](image/select_ata.png)  
 Terminal:  
 ```python
