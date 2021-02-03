@@ -22,8 +22,9 @@ Example:
  fm.shortans("hi")
  form.display()
 ```
-Output  
-![Image](image/shortans.png)
+Output:  
+![Image](image/shortans.png)  
+Terminal:  
 ```python
 {'This is a test': 'hi'}
 ```
@@ -39,7 +40,9 @@ Example:
  fm.mutichoice("Multiple Choice",['1','2','3'])
  form.display()
 ```
-Output
+Output  
+![Image1](image/multichoice.png)  
+Terminal:  
 ```python
 {'This is a test': True, 'This is a test0': False, 'This is a test1': False}
 ```
@@ -52,11 +55,48 @@ Example:
  import FormMaker as fm
  form.create("Select all that apply")
  fm = form.add()
- fm.select_ata("Select all that aplpy",['1','2','3'])
+ fm.select_ata("Select all that apply",['1','2','3'])
  form.display()
 ```
 Output
+![What is this](iamge/select_ata.png)  
+Terminal:  
 ```python
 {'This is a test': True, 'This is a test0': True, 'This is a test1': False}
 ```
-#### 
+#### uploadfile(prompt)
+uploadfile is a file upload object- adds a select all that apply object to the form  
+prompt is to be str or int, when making use, use the appropriate command to convert str->int or int->str  
+Example:
+```python
+ import FormMaker as fm
+ form.create("Select all that apply")
+ fm = form.add()
+ fm.uploadfile("Upload File")
+ form.display()
+```
+Output
+![What is this](iamge/uploadfile1.png)  
+![What is this](iamge/uploadfile2.png)   
+Terminal:  
+```python
+{'Browse': '/home/runner/FormMaker/main.py'}
+```
+#### uploadfile_rt(prompt,file types)
+uploadfile_rt is a file upload object that allows only a certain type of file- adds a select all that apply object to the form  
+prompt is to be str or int, when making use the appropriate command to convert str->int or int->str  
+Example:
+```python
+ import FormMaker as fm
+ form.create("Select all that apply")
+ fm = form.add()
+ fm.uploadfile_rt("Upload File",(('Python Files', '.py')))
+ form.display()
+```
+Output:  
+![What is this](iamge/uploadfile_rt1.png)  
+![What is this](iamge/uploadfile_rt2.png)   
+Terminal:  
+```python
+{'Browse': '/home/runner/FormMaker/main.py'}
+```
