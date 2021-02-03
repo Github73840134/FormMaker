@@ -2,5 +2,5 @@ import FormMaker as fm
 
 fm.create("Test")
 form = fm.add()
-form.select_ata("This is a test",['1','2','3'])
+form.uploadfile_rt("Upload File",(('Python Files','*.py'),))
 print(form.display())
