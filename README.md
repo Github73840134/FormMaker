@@ -22,7 +22,8 @@ Example:
  fm.shortans("hi")
  form.display()
 ```
-Output
+Output  
+![Image](image/shortans.png)
 ```python
 {'This is a test': 'hi'}
 ```
