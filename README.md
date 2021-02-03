@@ -116,4 +116,4 @@ Well you made it to the end of the documentation.
 - Add multi-file uploading
 - Save form templates
 # Thanks!
-©2020 Seth Edwards
+©2021 Seth Edwards
