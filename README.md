@@ -1,6 +1,8 @@
 # FormMaker
 A form maker built with PySimpleGUI
-Version 1.0
+Version 1.1
+# New Changes
+- V
 # READ THIS BEFORE CONTINUING
 This only works with Python 3+, This is due to PySimpleGUI requiring it.
 # A quick note
@@ -108,6 +110,84 @@ Terminal:
 ```python
 {'Browse': '/home/runner/FormMaker/main.py'}
 ```
+#### image(prompt,filename)
+image is an image object- it adds an image to form  
+prompt is to be str or int, when making use, use the appropriate command to convert str->int or int->str  
+Example:
+```python
+ import FormMaker as fm
+ form.create("Select all that apply")
+ fm = form.add()
+ fm.uploadfile_rt("Upload File",(('Python Files', '.py')))
+ form.display()
+```
+Output:  
+![What is this](image/uploadfile_rt1.png)  
+![What is this](image/uploadfile_rt2.png)   
+Terminal:  
+```python
+{'Browse': '/home/runner/FormMaker/main.py'}
+```
+#### dropdown(prompt,option)
+dropdown object is an that allows only a certain type of file- adds a select all that apply object to the form  
+prompt is to be str or int, when making use the appropriate command to convert str->int or int->str  
+Example:
+```python
+ import FormMaker as fm
+ form.create("Select all that apply")
+ fm = form.add()
+ fm.uploadfile_rt("Upload File",(('Python Files', '.py')))
+ form.display()
+```
+Output:  
+![What is this](image/uploadfile_rt1.png)  
+![What is this](image/uploadfile_rt2.png)   
+Terminal:  
+```python
+{'Browse': '/home/runner/FormMaker/main.py'}
+```
+#### create_fromurl(url)
+create_fromurl object allows you to create a form from an html form object, 
+url (str)- can be an https:// or http://
+Example:
+```python
+ import FormMaker as fm
+
+ fm.create("Test")
+ form = fm.networkform
+ form.create_fromurl('https://quicknetworkfilesystem.sethedwards.repl.co/pathadd/Share/f.txt')
+```
+Output:
+![What is this](image/create_fromurl.png)
+##### Supported html elemnts
+input
+file
+checkbox
+##### Returns
+Form Data- Form submission data
+Request Failed-Form grabbing failed
+#### fill_formurl(url)
+fill_fromurl allows you create and fill a form from a website
+url (str)-can be an https:// or http://
+NOTE: Prompt Text will html header name.
+Example:
+```python
+ import FormMaker as fm
+
+ fm.create("Test")
+ form = fm.networkform
+ form.fill_fromurl('https://quicknetworkfilesystem.sethedwards.repl.co/pathadd/Share/f.txt')
+```
+Output:
+![What is this](image/fill_fromurl.png)  
+Returns: 
+Sent-Form sent
+Sending Failed-Form submission failed
+Request Failed-Form grabbing failed
+
+##### Supported html elements
+input
+file
 # The End
 Well you made it to the end of the documentation.
 
@@ -116,4 +196,4 @@ Well you made it to the end of the documentation.
 - Add multi-file uploading
 - Save form templates
 # Thanks!
-©2020 Seth Edwards
+©2021 Seth Edwards
