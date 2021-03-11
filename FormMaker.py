@@ -120,12 +120,12 @@ def ver():
 	"""
 	This function returns the version
 	"""
-	return [["Version","1.0"],["Name","FormMaker"]]
+	return [["Version","1.1"],["Name","FormMaker"]]
 def brief():
 	"""
 	Gives a breif
 	"""
-	return "FormMaker Version 1.0\nNew Features\n- File uploading\n- Short answers\n- Multichoice\n- Select all that apply"
+	return "FormMaker Version 1.1\nNew Features\n- Network Forms\n"
 def demo():
 	"""
   This function makes a demo window.
