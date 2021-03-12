@@ -4,7 +4,6 @@ A form maker built with PySimpleGUI
 Version 1.1
 # New Changes
 - V
-=======
 Version 1.0
 
 # READ THIS BEFORE CONTINUING
@@ -200,12 +199,5 @@ Well you made it to the end of the documentation.
 - Add multi-file uploading
 - Save form templates
 # Thanks!
-<<<<<<< HEAD
-<<<<<<< HEAD
 ©2021 Seth Edwards
-=======
-©2021 Seth Edwards
->>>>>>> origin/master
-=======
-©2021 Seth Edwards
->>>>>>> origin/master
+
