@@ -1,6 +1,5 @@
 # FormMaker
 A form maker built with PySimpleGUI
-<<<<<<< HEAD
 Version 1.1
 # New Changes
 - V
