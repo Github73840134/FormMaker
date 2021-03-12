@@ -6,7 +6,6 @@ import urllib.parse
 import requests
 import json
 import time
-f=''
 import re
 global formname
 formname = ''
