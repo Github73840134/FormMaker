@@ -1,9 +1,9 @@
 # FormMaker
 A form maker built with PySimpleGUI
-Version 1.1
 # New Changes
-- Vfej
-Version 1.0
+- Network Forms
+Version 1.1
+#Download Link
 
 # READ THIS BEFORE CONTINUING
 This only works with Python 3+, This is due to PySimpleGUI requiring it.
@@ -113,6 +113,7 @@ Terminal:
 {'Browse': '/home/runner/FormMaker/main.py'}
 ```
 #### image(prompt,filename)
+Still in progress
 image is an image object- it adds an image to form  
 prompt is to be str or int, when making use, use the appropriate command to convert str->int or int->str  
 Example:
@@ -142,8 +143,7 @@ Example:
  form.display()
 ```
 Output:  
-![What is this](image/uploadfile_rt1.png)  
-![What is this](image/uploadfile_rt2.png)   
+Not done  
 Terminal:  
 ```python
 {'Browse': '/home/runner/FormMaker/main.py'}
@@ -160,7 +160,7 @@ Example:
  form.create_fromurl('https://quicknetworkfilesystem.sethedwards.repl.co/pathadd/Share/f.txt')
 ```
 Output:
-![What is this](image/create_fromurl.png)
+![Create form url](image/create_fromurl.png)
 ##### Supported html elemnts
 input
 file
@@ -181,7 +181,7 @@ Example:
  form.fill_fromurl('https://quicknetworkfilesystem.sethedwards.repl.co/pathadd/Share/f.txt')
 ```
 Output:
-![What is this](image/fill_fromurl.png)  
+![Fill from url](image/fill_fromurl.png)  
 Returns: 
 Sent-Form sent
 Sending Failed-Form submission failed
