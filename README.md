@@ -1,8 +1,13 @@
 # FormMaker
 A form maker built with PySimpleGUI
+<<<<<<< HEAD
 Version 1.1
 # New Changes
 - V
+=======
+Version 1.0
+
+>>>>>>> origin/master
 # READ THIS BEFORE CONTINUING
 This only works with Python 3+, This is due to PySimpleGUI requiring it.
 # A quick note
@@ -196,4 +201,8 @@ Well you made it to the end of the documentation.
 - Add multi-file uploading
 - Save form templates
 # Thanks!
+<<<<<<< HEAD
 ©2021 Seth Edwards
+=======
+©2021 Seth Edwards
+>>>>>>> origin/master
